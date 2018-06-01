@@ -1,7 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, OnInit, ViewChild, Inject } from '@angular/core';
 import {} from '';
-import { RakiService } from './rijks/raki.service';
 import { SwUrlService } from './samples/sw-url.service';
 import { timer, fromEvent, Subject, empty, of } from 'rxjs';
 import { map, tap, filter, startWith, mergeMap, switchMap } from 'rxjs/operators';
@@ -33,7 +32,6 @@ export class AppComponent implements OnInit {
   @ViewChild('main') main;
 
   constructor(
-    public raki: RakiService,
     private swUrlService: SwUrlService,
     @Inject(DOCUMENT) private document: any
   ) {}
@@ -41,9 +39,6 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     if (this.hasArt) {
       const m = this.main.nativeElement;
-      this.raki.randomImage$.subscribe(url => {
-        m.style.backgroundImage = url;
-      });
     }
 
     this.movingBg$.pipe(

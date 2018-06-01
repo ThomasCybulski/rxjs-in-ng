@@ -10,9 +10,6 @@ import { OnoffbuttonModule } from 'onoffbutton';
 import { SeNeonModule } from 'se-neon';
 
 import { AppComponent } from './app.component';
-import { ArtDetailComponent } from './rijks/art-detail/art-detail.component';
-import { ArtistsComponent } from './rijks/artists/artists.component';
-import { RakiService } from './rijks/raki.service';
 import { SamplesComponent } from './samples.component';
 import { AsyncPipeComponent } from './samples/async-pipe/async-pipe.component';
 import { CompAliveObsComponent } from './samples/comp-alive-obs/comp-alive-obs.component';
@@ -22,7 +19,6 @@ import { ErrorIsolationComponent } from './samples/error-isolation/error-isolati
 import { FilmPeopleComponent } from './samples/film-people/film-people.component';
 import { GiphyService } from './samples/giphy.service';
 import { InMemoryDataService } from './samples/in-memory-data.service';
-import { LeakyComponent } from './samples/leaky-component/leaky.component';
 import { MultiStreamComponent } from './samples/multi-stream/multi-stream.component';
 import { PeopleWithHomePlanetComponent } from './samples/fork-join/people-with-home-planet.component';
 import { RawComponent } from './samples/raw/raw.component';
@@ -38,7 +34,6 @@ import { SwPeopleComponent } from './samples/sw-people/sw-people.component';
 import { SwUrlService } from './samples/sw-url.service';
 import { TakeUntilComponent } from './samples/take-until/take-until.component';
 import { TakeWhileComponent } from './samples/take-while/take-while.component';
-import { WhipwheehwComponent } from './samples/whipWheehw/whipwheehw.component';
 import { WikipediaService } from './samples/wikipedia.service';
 import { WikipediaComponent } from './samples/wikipedia/wikipedia.component';
 
@@ -56,8 +51,6 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    ArtDetailComponent,
-    ArtistsComponent,
     AsyncPipeComponent,
     ButtonBar,
     ButtonBarItemComponent,
@@ -67,7 +60,6 @@ const routes: Routes = [
     CompIsThereComponent,
     ErrorIsolationComponent,
     FilmPeopleComponent,
-    LeakyComponent,
     MovieComponent,
     MultiStreamComponent,
     PeopleWithHomePlanetComponent,
@@ -82,7 +74,6 @@ const routes: Routes = [
     SwPeopleFindComponent,
     TakeUntilComponent,
     TakeWhileComponent,
-    WhipwheehwComponent,
     WikipediaComponent,
   ],
   imports: [
@@ -100,7 +91,6 @@ const routes: Routes = [
   providers: [
     ButtonbarService,
     GiphyService,
-    RakiService,
     SwPeopleService,
     SwUrlService,
     TimeService,
