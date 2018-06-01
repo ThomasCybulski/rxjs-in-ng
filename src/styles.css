@@ -60,16 +60,6 @@ body {
 button {
   margin-right: 4px;
 }
-button.toggleSwUrl {
-  background-color: coral;
-}
-button.router {
-  background-color: paleturquoise;
-}
-button.home {
-  color: white;
-  background-color: green;
-}
 router-outlet {
   display: none;
 }
