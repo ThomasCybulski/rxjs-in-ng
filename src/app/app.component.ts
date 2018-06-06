@@ -57,9 +57,6 @@ export class AppComponent implements OnInit {
       // .subscribe();
   }
 
-  toggleSwUrl() {
-    this.swUrlService.toggleUrl();
-  }
 }
 //
 
